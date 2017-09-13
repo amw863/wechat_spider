@@ -24,7 +24,7 @@ android,iPhone等微信客户端平台, win和osx的微信客户端暂不兼容
 
 ## 安装
  go1.7为作者已测试稳定版本 (go1.8有证书问题,请降级安装)
- `go get github.com/sundy-li/wechat_spider`
+ `go get github.com/tuotoo/wechat_spider`
 
 ## 代理服务端
 通过Man-In-Middle 代理方式获取微信服务端返回,自动模拟请求自动分页,抓取对应点击的所有历史文章
@@ -34,7 +34,7 @@ android,iPhone等微信客户端平台, win和osx的微信客户端暂不兼容
 package main
 
 import (
-	spider "github.com/sundy-li/wechat_spider"
+	spider "github.com/tuotoo/wechat_spider"
 )
 
 func main() {
@@ -54,11 +54,11 @@ func main() {
 * js跳转由于微信新规则已经不可用 ~~抓取阅读数,点赞数请实现`Processor`接口的`Output`和`NextUrl`方法,参考[custom_output_detail_server.go][4]~~
 
 
-[1]: https://github.com/sundy-li/wechat_spider/blob/master/examples/simple_server.go
-[2]: https://github.com/sundy-li/wechat_spider/blob/master/examples/custom_output_server.go
-[3]: https://github.com/sundy-li/wechat_spider/blob/master/docs/FAQ.md
-[4]: https://github.com/sundy-li/wechat_spider/blob/master/examples/custom_output_detail_server.go
-[5]: https://github.com/sundy-li/wechat_spider/blob/master/examples/robot-demo.go
+[1]: https://github.com/tuotoo/wechat_spider/blob/master/examples/simple_server.go
+[2]: https://github.com/tuotoo/wechat_spider/blob/master/examples/custom_output_server.go
+[3]: https://github.com/tuotoo/wechat_spider/blob/master/docs/FAQ.md
+[4]: https://github.com/tuotoo/wechat_spider/blob/master/examples/custom_output_detail_server.go
+[5]: https://github.com/tuotoo/wechat_spider/blob/master/examples/robot-demo.go
 [6]: https://gist.github.com/Josscii/bedbbebe3294b3d6de55c8256886c437
 
 * 微信会屏蔽频繁的请求,所以历史文章的翻页请求调用了Sleep()方法, 默认每个请求休眠50ms,可以根据实际情况自定义Processor覆盖此方法

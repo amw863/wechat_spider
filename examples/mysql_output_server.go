@@ -7,7 +7,7 @@ import (
 	"net/url"
 	"time"
 
-	spider "github.com/sundy-li/wechat_spider"
+	spider "github.com/tuotoo/wechat_spider"
 
 	"database/sql"
 

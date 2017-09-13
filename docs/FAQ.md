@@ -23,7 +23,7 @@ FAQ
 - 首先这个代码是面向开发者开源的,开发想简单使用的话,可以装个go环境,跑一下示例程序,其实核心代码不过200行, 这个框架只是核心组件的实现, 没有做到工程化, 需要工程定制请稍微学习下Go语言即可
 
 ## 爬虫可以输出到队列,数据库,文件等吗?
-- 可以自定义输出,请参考 https://github.com/sundy-li/wechat_spider/blob/master/examples/custom_output_server.go
+- 可以自定义输出,请参考 https://github.com/tuotoo/wechat_spider/blob/master/examples/custom_output_server.go
 
 ## 批量爬虫的bizs如何获取到? NextBiz方法如何实现?
 
@@ -34,7 +34,7 @@ FAQ
 
 ##  通过pyautogui.position() 瞄点设置 first_ret, rel_link 坐标。这里也不是很明白需要如何操作。
 
-- 先参考代码: https://github.com/sundy-li/wechat_spider/blob/master/examples/win_client.py 这个是windows客户端批量请求公众号历史文章链接的代码的逻辑,原理是通过win32的api获取对应的句柄,来发送url给微信,操作鼠标移动坐标模拟点击url,服务端进行报文截取. 理清这个逻辑之后, 这个pyautogui.position() 其实就是  pyautogui 的瞄点api,具体可以看pyautogui文档
+- 先参考代码: https://github.com/tuotoo/wechat_spider/blob/master/examples/win_client.py 这个是windows客户端批量请求公众号历史文章链接的代码的逻辑,原理是通过win32的api获取对应的句柄,来发送url给微信,操作鼠标移动坐标模拟点击url,服务端进行报文截取. 理清这个逻辑之后, 这个pyautogui.position() 其实就是  pyautogui 的瞄点api,具体可以看pyautogui文档
 
 
 

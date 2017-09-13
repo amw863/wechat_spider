@@ -1,7 +1,7 @@
 package main
 
 import (
-	spider "github.com/sundy-li/wechat_spider"
+	spider "github.com/tuotoo/wechat_spider"
 )
 
 func main() {

@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	spider "github.com/sundy-li/wechat_spider"
+	spider "github.com/tuotoo/wechat_spider"
 )
 
 func main() {
